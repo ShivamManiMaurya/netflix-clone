@@ -1,16 +1,36 @@
-import './App.css';
-import Row from './component/Row';
-import requests from './requests';
+import "./App.css";
+import Row from "./component/Row";
+import requests from "./requests";
+import Banner from "./component/Banner";
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Making Netflix clone</h1>
+    return (
+        <div className="app">
+            {/* Navbar */}
 
-      <Row title="Netflix Originals" fetchUrl={requests.fetchNetflixOriginals} />
-      <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
-    </div>
-  );
+            <Banner />
+
+            {requests.map((types, index) => {
+                {
+                    /* console.log(types.title); */
+                }
+                return types.title === "NETFLIX ORIGINALS" ? (
+                    <Row
+                        key={index}
+                        title={types.title}
+                        fetchUrl={types.fetch}
+                        isLargeRow
+                    />
+                ) : (
+                    <Row
+                        key={index}
+                        title={types.title}
+                        fetchUrl={types.fetch}
+                    />
+                );
+            })}
+        </div>
+    );
 }
 
 export default App;

@@ -1,0 +1,43 @@
+.row {
+    /* background-color: red; */
+}
+
+.row__posters {
+    display: flex;
+    justify-content: flex-start;
+    overflow-y: hidden;                 /* learned */
+    overflow-x: scroll;                 /* learned */
+    padding: 20px;
+}
+
+/* .row__posters-container { 
+    width: 100%;
+    max-height: 300px;
+} */
+
+.row__posters::-webkit-scrollbar {      /* learned */
+    display: none;
+}
+
+.row__posterImage {
+    width: 100%;
+    object-fit: contain;
+    max-height: 200px;
+    margin-right: 10px;
+    transition: transform 450ms;        /* learned */
+}
+
+.row__posterImage:hover {
+    transform: scale(1.1);              /* learned */
+}
+
+.row__posterImageLarge {
+    max-height: 150px;
+    margin-right: 10px;
+    transition: transform 450ms;
+}
+
+.row__posterImageLarge:hover {
+    transform: scale(1.05);
+}
+
