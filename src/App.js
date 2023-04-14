@@ -11,9 +11,6 @@ function App() {
             <Banner />
 
             {requests.map((types, index) => {
-                {
-                    /* console.log(types.title); */
-                }
                 return types.title === "NETFLIX ORIGINALS" ? (
                     <Row
                         key={index}

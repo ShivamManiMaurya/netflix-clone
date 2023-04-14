@@ -36,7 +36,7 @@ function Row({ fetchUrl, title, isLargeRow }) {
 
     return (
         <div className="row">
-            <h2>{title}</h2>
+            <h2 className="row__title">{title}</h2>
             <div className="row__posters">
                 {/* movies posters on the screen in the form of row */}
                 {movies.map((movie) => {
