@@ -1,0 +1,36 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1;
+
+    /* animation */
+    animation-timing-function: ease-in-out;
+    transition: all 1s;
+}
+
+.nav__black {
+    background-color: black;
+}
+
+
+.nav__logo {
+    position: fixed;
+    left: 0;
+    max-width: 150px;
+    max-height: 75px;
+    object-fit: contain;
+}
+
+.nav__avatar {
+    position: fixed;
+    right: 0;
+    max-width: 35px;
+    max-height: 35px;
+    padding-right: 20px;
+    object-fit: contain;
+}

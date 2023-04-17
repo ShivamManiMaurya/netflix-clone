@@ -2,12 +2,12 @@ import "./App.css";
 import Row from "./component/Row";
 import requests from "./requests";
 import Banner from "./component/Banner";
+import Nav from "./component/Nav";
 
 function App() {
     return (
         <div className="app">
-            {/* Navbar */}
-
+            <Nav />
             <Banner />
 
             {requests.map((types, index) => {
