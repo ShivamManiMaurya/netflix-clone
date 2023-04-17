@@ -55,6 +55,7 @@ function Banner() {
                     <button className="banner__btn banner__playBtn">
                         Play
                     </button>
+
                     <button className="banner__btn banner__myListBtn">
                         My List
                     </button>
@@ -64,7 +65,6 @@ function Banner() {
                     {truncateOverviewString(movie?.overview, 220)}
                 </p>
             </div>
-
             <div className="banner--fadeBottom"></div>
         </header>
     );
