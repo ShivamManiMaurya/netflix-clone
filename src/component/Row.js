@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import axiosInstance from "../axios";
+import YouTube from "react-youtube";
+import movieTrailer from "movie-trailer";
 
 // styles
 import "./styles/RowStyles.css";
 
 function Row({ fetchUrl, title, isLargeRow }) {
     const [movies, setMovies] = useState([]);
+    const [trailerUrl, setTrailerUrl] = useState("");
 
     const imageBaseUrl = "https://image.tmdb.org/t/p/w500";
     // I got baseUrl from https://developers.themoviedb.org/3/getting-started/images
@@ -32,7 +35,31 @@ function Row({ fetchUrl, title, isLargeRow }) {
         // here we are calling the fetchData() function so how we do the async inside useEffect
     }, [fetchUrl]);
 
-    // console.log(movies);
+    const opts = {
+        height: "390",
+        width: "100%",
+        playerVars: {
+            // https://developers.google.com/youtube/player_parameters
+            autoplay: 1,
+        },
+        placeContent: "center",
+    };
+
+    const handleTrailer = (movie) => {
+        if (trailerUrl) {
+            setTrailerUrl("");
+        } else {
+            movieTrailer(
+                movie?.name || movie?.title || movie?.original_name || ""
+            )
+                .then((url) => {
+                    // https://www.youtube.com/watch?v=j-BTk1gC6CA here v = j-BTk1gC6CA
+                    const urlParams = new URLSearchParams(new URL(url).search);
+                    setTrailerUrl(urlParams.get("v"));
+                })
+                .catch((error) => console.log(error));
+        }
+    };
 
     return (
         <div className="row">
@@ -54,6 +81,8 @@ function Row({ fetchUrl, title, isLargeRow }) {
                                     : movie?.backdrop_path
                             }`}
                             alt={movie?.name}
+                            onClick={() => handleTrailer(movie)}
+                            value={movie?.name}
                         />
                     );
                     // here movies? is used for checking null or undefined value, and we call this optional chaining
@@ -61,6 +90,7 @@ function Row({ fetchUrl, title, isLargeRow }) {
                     // so for that we need to add the baseUrl so it looks like https://image.tmdb.org/t/p/w500/6jOpyXVzQyYL4QB12VRpHUxdwg1.jpg
                 })}
             </div>
+            {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
         </div>
     );
 }
