@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# Netflix Clone in React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React project that uses Firebase for real-time database storage. In this project the user can intract with the movie cards and can play their trailer. The movies that are shown are always changing with time.
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+-   [Overview](#overview)
+    -   [The challenge](#the-challenge)
+    -   [Screenshot](#screenshot)
+    -   [Links](#links)
+-   [My process](#my-process)
+    -   [Built with](#built-with)
+    -   [What I learned](#what-i-learned)
+    -   [Continued development](#continued-development)
+    -   [Useful resources](#useful-resources)
+-   [Author](#author)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### The Theme
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Users should be able to:
 
-### `npm test`
+-   View the whole page as shown on the netflix website.
+-   See hover states for all interactive elements on the page.
+-   Play the trailer when the image card is clicked and stop the trailer when again clicked on the image.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Screenshot
 
-### `npm run build`
+![](./screenshot.jpg)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Main Page                                                           |
+| ------------------------------------------------------------------- |
+| ![Main_page](./src/component/screenshots/NetflixClone_mainPage.png) |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Hover State                                                             | Clicked State                                                                |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| ![hover_state](./src/component/screenshots/NetflixClone_hoverState.png) | ![clicked_state](./src/component/screenshots/NetflixClone_clickedState1.png) |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Links
 
-### `npm run eject`
+-   [Github Solution](https://github.com/ShivamManiMaurya/netflix-clone)
+-   [Live Site](https://netflix-clone-ece17.web.app/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## My process
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Built with
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+-   HTML5
+-   CSS custom properties
+-   Flexbox
+-   JavaScript
+-   [React](https://reactjs.org/) - JS library
+-   [Firebase](https://firebase.google.com/) - For database
+-   [TMDB_Api](https://developers.themoviedb.org/3/getting-started/introduction) - Movie database Api
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### What I learned
 
-## Learn More
+-   Setup firebase
+-   Introduction to firebase
+-   useEffect hook and its different ways
+-   Promises
+-   Optional Chaining
+-   Get familiar with Async/Await
+-   Get familiar with overflow css property
+-   Get familiar with ::-webkit-scrollbar in css
+-   Get more familiar with transition and transform css property
+-   Get more familiar with animations in css
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Continued development
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+After this project I want to develop a netflix 2.0 clone in which I want to do development with redux, next-js and want to add more functionalities like authentication, subscription, payment and many more.
 
-### Code Splitting
+### Useful resources
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+-   [Clever Programmer](https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ) - A very special thanks to Clever Programmer
+-   [Akshay Saini](https://www.youtube.com/@akshaymarch7) - Akshay Saini bhaiya helped me in understanding promises and other concepts
+-   [Sonny Sangha](https://www.youtube.com/@SonnySangha) - A very special thanks to Sonny Sangha as well and also he helped me in understanding useEffect hooks and other concepts as well.
 
-### Analyzing the Bundle Size
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-   Website - [Shivam Maurya](https://www.your-site.com)
+-   GitHub Page - [Shivam Maurya GitHub](https://github.com/ShivamManiMaurya)
+-   Linkedin - [@shivammanimaurya](https://www.linkedin.com/in/shivammanimaurya)
