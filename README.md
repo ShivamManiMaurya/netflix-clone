@@ -5,7 +5,7 @@ This is a React project that uses Firebase for real-time database storage. The u
 ## Table of contents
 
 -   [Overview](#overview)
-    -   [The challenge](#the-challenge)
+    -   [The Theme](#the-theme)
     -   [Screenshot](#screenshot)
     -   [Links](#links)
 -   [My process](#my-process)
