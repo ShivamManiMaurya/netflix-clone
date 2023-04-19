@@ -1,6 +1,6 @@
 # Netflix Clone in React
 
-This is a React project that uses Firebase for real-time database storage. In this project the user can intract with the movie cards and can play their trailer. The movies that are shown are always changing with time.
+This is a React project that uses Firebase for real-time database storage. The user can interact with the movie cards and play their trailer in this project. The movies that are shown are constantly changing with time.
 
 ## Table of contents
 
@@ -21,7 +21,7 @@ This is a React project that uses Firebase for real-time database storage. In th
 
 Users should be able to:
 
--   View the whole page as shown on the netflix website.
+-   View the whole page as shown on the Netflix website.
 -   See hover states for all interactive elements on the page.
 -   Play the trailer when the image card is clicked and stop the trailer when again clicked on the image.
 
@@ -57,19 +57,19 @@ Users should be able to:
 ### What I learned
 
 -   Setup firebase
--   Introduction to firebase
+-   Introduction to Firebase
 -   useEffect hook and its different ways
 -   Promises
 -   Optional Chaining
 -   Get familiar with Async/Await
--   Get familiar with overflow css property
--   Get familiar with ::-webkit-scrollbar in css
--   Get more familiar with transition and transform css property
--   Get more familiar with animations in css
+-   Get familiar with overflow CSS property
+-   Get familiar with ::-webkit-scrollbar in CSS
+-   Get more familiar with transition and transform CSS property
+-   Get more familiar with animations in CSS
 
 ### Continued development
 
-After this project I want to develop a netflix 2.0 clone in which I want to do development with redux, next-js and want to add more functionalities like authentication, subscription, payment and many more.
+After this project, I want to develop a Netflix 2.0 clone in which I want to do development with redux, and next-js and want to add more functionalities like authentication, subscription, payment, and many more.
 
 ### Useful resources
 
